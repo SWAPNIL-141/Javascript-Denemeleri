@@ -1,0 +1,22 @@
+<input type="text" id="kenar" placeholder="Kenarı girin">
+<input type="button" value="Hesapla" id="hesapla">
+<script>
+//fonksiyonu tanımladık.
+function hesapla(){
+//text kutusu içindeki değeri okuyup sayi değişkenine aktarıyoruz.
+var sayi=document.getElementById("kenar").value;
+ 
+//text kutusuna girilen değerler metinsel türdedir. Hesaplama yapabilmek için sayıya çeviriyoruz.
+sayi=Number(sayi);
+ 
+var alan=sayi*sayi;
+var cevre=sayi*4;
+alert("Karenin alanı:"+alan+" \n Karenin çevresi:"+cevre);
+ 
+}
+//hesaplama yapması için hesap butonunu seçiyoruz.
+var hesapBtn=document.getElementById("hesapla");
+ 
+//fonksiyonu olaya bağlıyoruz.
+hesapBtn.onclick=hesapla;
+ </script>

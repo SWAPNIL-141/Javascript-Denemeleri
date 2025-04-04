@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>www.yazilimkodlama.com</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+ 
+<p><u>JavaScript Object Kullanımı</u></p>
+ 
+<p id="bilgi"></p>
+<p><b>Araç Detayları</b></p>
+<p id="detay"></p>
+<script>
+var arac={
+    marka:"Renault",
+    model:"Clio",
+    yil:2018,
+    renk:"Beyaz",
+    yakit:"Dizel",
+    saatUcreti:60
+};
+ 
+document.getElementById("bilgi").innerHTML =
+arac.marka + " " + arac.model + " model "+arac.yakit+" aracın saatlik kiralama ücreti : "+arac.saatUcreti;
+    
+document.getElementById("detay").innerHTML=
+    "Marka      : "+arac.marka+"<br>"+
+    "Model      : "+arac.model+"<br>"+
+    "Model Yılı : "+arac.model+"<br>"+
+    "Renk       : "+arac.renk+"<br>"+
+    "Yakıt Türü : "+arac.yakit+"<br>"+
+    "Saat Ücreti: "+arac.saatUcreti;
+    
+</script>
+ 
+</body>
+</html>

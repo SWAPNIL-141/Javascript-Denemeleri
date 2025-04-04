@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>if else örnekleri</title>
+</head>
+
+<body>
+<input type="number" id="sayi">
+<input type="button" id="hesapla" value="HESAPLA">
+<div id="durumgoster"></div>
+
+
+<script>
+
+var sayiNesne=document.getElementById("sayi");
+var hesaplaBtn=document.getElementById("hesapla");
+hesaplaBtn.onclick=islemYap;
+function islemYap(){
+var sayi=Number(sayiNesne.value);
+var durumGoster=document.getElementById("durumgoster");
+
+if(sayi<0)
+{
+durumGoster.innerHTML="SAYI NEGATİFTİR."; 
+}
+else if(sayi>0)
+{
+durumGoster.innerHTML="SAYI POZİTİFTİR"; 
+}
+else
+{
+durumGoster.innerHTML="SAYI SIFIRDIR"; 
+}
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	#sonuc{
+		margin-top: 15px;
+		font-size: 2em;
+		color: red;
+	}	
+</style>
+</head>
+ 
+<body>
+ 
+<input type="number" id="s1" placeholder="Sayıyı Girin...">
+<input type="button" id="hesapla" value="Hesapla">
+<div id="sonuc"></div>
+<script>
+var nsayi=document.getElementById("s1");
+ 
+	var btnHesapla=document.getElementById("hesapla");
+	
+	btnHesapla.onclick=function(){
+		var sayi=Number(nsayi.value);
+		var sonuc=0;
+		for(var i=1;i<=sayi;i++)
+			{
+				sonuc+=i;
+			}
+		document.getElementById("sonuc").innerHTML="Girilen sayıya kadar toplam : "+sonuc;
+	}
+</script>
+</body>
+</html>

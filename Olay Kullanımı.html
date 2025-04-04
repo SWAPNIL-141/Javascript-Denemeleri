@@ -1,0 +1,22 @@
+<button onclick="kontrol(document.getElementById('sayi'))">Kontrol Et</button>
+<input id="sayi" type="text" value="">
+ 
+<script>
+ 
+function kontrol(sayi){
+ 
+if(sayi.value%2==0)
+{
+alert(sayi.value+" sayısı çifttir");
+}
+else if(sayi.value%2==1)
+{
+alert(sayi.value+" sayısı tektir");
+}
+else
+{
+alert(sayi.value+" sayısı değildir");
+}
+}
+ 
+</script>

@@ -1,0 +1,94 @@
+<script>
+
+    //filter metodu kendisine gönderilen fonksiyondan geçen tüm elemanlardan yeni bir dizi oluşturur.
+    
+    function buyukSayilar(deger) {
+    return deger >= 25;
+    }
+    
+    var yeni_dizi = [12, 5, 8, 130, 44].filter(buyukSayilar);
+    // yeni_dizi degeri: [130, 44]
+    
+    document.write(yeni_dizi);
+    
+    </script>
+     
+    <script>
+ 
+    //concat metodun çağrıldığı dizi ile metodaa gönderilen dizi yada değerleri ekleyip geriye dizi döndürür.
+    // var yenidizi = eskidizi.concat(deger1[, deger2[, ...[, degerN]]])
+    var mevveler = ["Elma", "Muz"];
+    var sebzeler = ["Brokoli", "Lahana"];
+    var bitkiler=[];
+     
+    bitkiler= sebzeler.concat(mevveler);
+    document.write(bitkiler); //ekran çıktısı: Brokoli,Lahana,Elma,Muz
+     
+    </script>
+
+    <script>
+
+    //indexOf() metodu kendisine gönderilen parametre ile dizide aramayapıp bulduğu ilk indexi döndürür. eğer dizide yoksa aranan değer -1 değerini çevirir.
+    var dizi = [2, 9, 9];
+    dizi.indexOf(2); // 0
+    dizi.indexOf(7); // -1
+    dizi.indexOf(9, 2); // 2
+    dizi.indexOf(2, -1); // -1
+    dizi.indexOf(2, -3); // 0
+    
+    </script>
+     
+    <script>
+ 
+    //join() methodu dizideki tüm değerleri belirtilen yapıştırıyıcıya göre birleştirir.
+     
+    var meyveler = ["Elma", "Muz","Üzüm","Portakal"];
+     
+    var dizi1 =meyveler.join(","); //Elma,Muz,Üzüm,Portakal
+    var dizi2 =meyveler.join("+"); //Elma+Muz+Üzüm+Portakal
+    </script>
+
+    <script>
+ 
+        //pop() methodu dizideki son değeri diziden atar.
+         
+        var mevveler = ["Elma", "Muz","Üzüm","Portakal"];
+         
+        var son_meyve=mevveler.pop();
+         
+        //meyveler yeni hali ["Elma", "Muz", "Üzüm"]
+        //son_meyve : "Portakal"
+         
+    </script>
+
+    <script>
+ 
+    // push() methodu belirtilen elemanları dizinin sonuna ekler.
+     
+    var mevveler = ["Elma", "Muz"];
+    meyveler.push("Üzüm","Portakal");
+     
+    //meyveler yeni hali : ["Elma", "Muz","Üzüm","Portakal"];
+     
+    </script>
+ 
+    <script>
+ 
+    //reverse() methodu diziyi ters çevirir.
+    var mevveler = ["Elma", "Muz","Üzüm","Portakal"];
+    meyveler.reverse();
+     
+    //meyveler yeni hali: ["Portakal","Üzüm","Muz","Elma"]
+     
+    </script>
+     
+    <script>
+ 
+    //sort() methodu diziyi sıralar.
+    var mevveler = ["Elma", "Muz","Ayva","Portakal"];
+     
+    mevveler.sort();
+     
+    //meyveler yeni hali ["Ayva", "Elma", "Muz", "Portakal"]
+     
+    </script>
